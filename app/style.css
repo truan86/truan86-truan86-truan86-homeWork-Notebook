@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Rosamunda;
+    src: url(img/Rosamunda%20Two.ttf);
+}
+
+body {
+    background: url("img/wd19egkmkeqyw7hgr9k4xlopn4yr5hdvzfkysyzmek3efpa362zgo1aydnaypqap-f.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    font-family: Rosamunda;
+    font-size: 60px;
+}
+
+#todayDate {
+    padding: 50px;
+    text-align: right;
+    font-family: Rosamunda;
+    font-size: 40px;
+}
+
+.noteBook {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    font-family: Rosamunda;
+    font-size: 40px;
+}
+
+.noteBook > button {
+    float: left;
+    margin-top: 20px;
+}
+
+.text {
+    height: 30px;
+    border: solid red 1px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.fieldNote {
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+#clear {
+    margin-top: 10px;
+}
+
+.glyphicon {
+    top: 0;
+}
+
+.fieldNote .active button span {
+    color: red;
+}
+
+.clearButton :hover {
+    color: red;
+}
+
+#notes {
+    width: 500px;
+    float: right;
+    margin-top: 20px;
+    padding: 6px 12px;
+    text-align: right;
+}
+
+#notes > a {
+    margin: 10px 5px;
+}
+
+#clearAll {
+    display: none;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+}
+
+.textNote.over {
+    border: 2px dotted #000;
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}

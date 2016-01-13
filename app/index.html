@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Diary</h1>
+
+    <div id="todayDate"></div>
+</header>
+<section class="noteBook">
+    <h2>Enter a new note</h2>
+
+    <div class="input-group">
+        <input id="input" type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-success" type="button" id="add">Add!</button>
+      </span>
+    </div>
+    <button type="button" class="btn btn-success" id="chooseAll">Choose all <span
+            class="glyphicon glyphicon-heart-empty"></span></button>
+    <button type="button" class="btn btn-danger" id="canselAll">Cansel all<span
+            class="glyphicon glyphicon-heart-empty"></span></button>
+
+    <div id="notes">
+        <a href="#">All notes<span class="badge" id="allNotesSpan"></span></a>
+        <a href="#">Like notes<span class="badge" id="likeNotesSpan"></span></a>
+        <a href="#">Dislike notes<span class="badge" id="dislikeNotesSpan"></span></a>
+    </div>
+    <div style="clear:both"></div>
+    <div class="fieldNote"></div>
+    <button type="button" class="btn btn-primary btn-lg " id="clearAll">Remove all dislike notes</button>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+<script src="js/index/packed.js"></script>
+</body>
+</html>
